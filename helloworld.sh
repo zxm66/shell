@@ -20,5 +20,13 @@ AGE=18
 echo "name : $NAME"
 echo "age : $AGE"
 
+for (( i = 0; i < 10; i++ )); do
+	echo "hello world"
+done
+
+if [[ $NAME == "zhangxiaomin" ]]; then
+	echo $NAME
+fi
+
 
 
