@@ -1,6 +1,12 @@
 linux 系统进阶路线图
 
 linux下软件包的管理
+	yum
+	apt
+	yarn
+	yay
+	pacman
+
 linux服务器基本配置
 网络配置
 	tcp/ip协议四层模型
@@ -188,8 +194,66 @@ shell编程
 
 	unset 去掉一个变量
 
+	条件判断语句结构
+		思考：何为真（true）？何为假（false）？
+		1.条件判断语法格式
+			test 条件表达式
+			[条件表达式]
+			[[条件表达式]]支持正则=～
+		特别说明：
+			[ 两边必须有空格 ]
+			[[ 两边必须有空格 ]]
+		更多判断 man test去查看，很多参数都是用来进行条件判断
 
+	条件判断相关参数
+		判断文件类型，字符串相等，权限
+		
+		-e 判断文件是否存在（任何文件类型）
+		-f 判断文件是否存在并且是一个普通文件
 
+		判断整数
+		判断字符串
+		
+		多重条件判断
+		-a 和 &&
+		-o 和 ||
+		; 只用于分割命令表达式
+
+		逻辑运算符总结
+		语法结构 test express
+
+		条件判断
+		-d 目录
+		-L
+		-e
+		-w 可写
+		-eq 相等
+		-ef 判断文件是否是同一个文件
+		-n
+		-z
+		看man test 
+
+		基本语法结构
+		if 结构
+			if [ condition ]; then
+				command
+			fi
+		if else 结构
+			if [ condition ]; then
+					command
+				else
+					command
+			fi
+		if elif else 结构
+			if [ condition ]; then
+				command
+			elif [ condition]; then
+				command
+			else
+				command
+			fi
+	
+		
 
 		
 		
