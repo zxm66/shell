@@ -253,8 +253,43 @@ shell编程
 				command
 			fi
 	
-		
+		for 循环语句
+			for 循环语法结构
+				列表循环
+				for variable in {list}
+					do
+						command
+						command
+					done
 
+				for variable in a b c
+					do 
+						command
+						command
+					done
+				不带列表的循环
+				for variable
+					do
+						command
+						command
+					done
+
+				类似C风格的for循环
+				注意：两边有空格
+				for(( expr1;expr2;expr3 ))
+					do 
+						command
+						command
+					done
+
+				for(( i=1;i<5;i++ ))
+					do 
+						echo $i
+					done
+		
+				continue 执行下次循环
+				break 跳出循环
+				exit 退出程序
 		
 		
 		
