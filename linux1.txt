@@ -1,58 +1,84 @@
 linux 命令大全
 	文件管理
 	cat
+		屏幕上打印
 	chattr
+		想想一下 cd 是chdir这个命令的缩写，所以ch 开头的都是change的缩写，
+		更改文件属性，
+		+i 只读 不可修改
+		+a 只能增加，不能减少
+	lsattr
+		lsattr 查看文件属性
 	chgrp
+		改变文件的用户群组
 	chmod
+		修改执行权限
 	chown
-	chsum
+		改变文件的owner
+	cksum
+		文件的校验码，用来查看文件在多台机器上传输，是否发生错误。	
 	cmp
+		compare 用来比较两个文件之间是否存在差异,可以判断文件是否是同一个文件，相比较与diff，更加简单。
 	diff
+		对比文件之间的不同
 	diffstat
+		用来统计diff输出的结果
 	file
+		判断文件类型
 	find
 	git
-	gitview
+		就不用说了
 	indent
+		用来缩紧代码的,C程序还好点，JAVA代码就别用了
 	cut
 	ln
+		软连接 硬连接
 	less
-	locate
-	lsattr
+		和more相似，比more好用点
 	mattrib
 	mc
+		挺好用的文件管理工具,就是使用emacs的快捷键有点不适应。
 	mdel
 	mdir
 	mktemp
 	more
+		分页展示
 	mmove
 	mread
 	mren
 	mtools
 	mtoolstest
-	mv
+	mv 剪切
+		
 	od
 	paste
 	patch
 	rcp
-	rm
+		复制远程文件
+	scp
+		复制远程文件，在rcp的基础上，做了加密操作
+	rm 删除
 	slocate
 	split
+		split -6 file.txt 每6行切割成一个文件
 	tee
 	tmpwatch
-	touch
+		删除临时文件
+	touch 创建文件
 	umask
-	which
-	cp
-	whereis
+		设置文件权限掩码
+	which 
+	cp 复制
+	whereis 当前目录
 	mcopy
 	mshowfat
 	rhmask
-	scp
 	awk
-	read
+	read 标准输入
 	updatedb
 	
+
+
 	文本编辑
 	col
 	colrm
