@@ -132,7 +132,7 @@ shell编程
 
 	read name
 	read -p "Input your name :" name
-
+	备注：这个-p的参数是bash的用法，zsh是没有的。
 	定义有类型的变量（declare）
 
 	declare -i A=123
